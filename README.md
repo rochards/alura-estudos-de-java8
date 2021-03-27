@@ -3,3 +3,4 @@
 ### Assuntos abordados
 - Métodos default das interfaces;
 - Expressões Lambdas;
+- Métodos Reference;
