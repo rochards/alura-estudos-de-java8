@@ -23,8 +23,14 @@ public class OrdenaStrings {
         palavras.sort(comparador);
         System.out.println(palavras);
 
-        Consumer<String> consumidor = new ImprimeNaLina();
-        palavras.forEach(consumidor);
+        // o forEach pede um Consumer como argumento, entao vamos passar um
+        palavras.forEach(new Consumer<String>() {
+            // essa implementacao eh uma classe anonima.
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        });
     }
 }
 
@@ -39,13 +45,5 @@ class ComparadorPorTamanho implements Comparator<String> {
             return 1;
         }
         return 0;
-    }
-}
-
-class ImprimeNaLina implements Consumer<String> {
-
-    @Override
-    public void accept(String s) {
-        System.out.println(s);
     }
 }
