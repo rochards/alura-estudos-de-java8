@@ -5,3 +5,4 @@
 - Expressões Lambdas;
 - Métodos Reference;
 - Streams;
+- Nova API de data;
