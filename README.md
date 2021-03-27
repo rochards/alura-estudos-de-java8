@@ -2,3 +2,4 @@
 
 ### Assuntos abordados
 - Métodos default das interfaces;
+- Expressões Lambdas;
