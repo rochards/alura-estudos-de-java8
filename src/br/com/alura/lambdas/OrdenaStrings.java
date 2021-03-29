@@ -16,7 +16,7 @@ public class OrdenaStrings {
 
         List<String> palavras = Arrays.asList("alura online", "editora casa do código", "caelum");
 
-        // Como a interface Comparator tem apenas um metodo abstrato (accept), podemos descrever seu comportamento por
+        // Como a interface Consumer tem apenas um metodo abstrato (accept), podemos descrever seu comportamento por
         // um expressao lambda, e o Java ja faz a inferencia
         palavras.forEach((String s) -> {
             System.out.println(s);
